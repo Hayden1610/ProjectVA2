@@ -36,5 +36,14 @@ int main()
     }
     myfile.close();
 
+#ifdef _DEBUG
+    cout << "Student Data in Debug mode" << endl;
+    for (int i = 0; i < student.size(); i++)
+    {
+        cout << "Student Name" << " : " << student[i].Firstname << "  " << student[i].Firstname << endl;
+    }
+#endif 
+
+
     return 0;
 }
